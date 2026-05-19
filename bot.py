@@ -10,8 +10,9 @@ import pytz
 #  CONFIGURAÇÕES — EDITE APENAS ESTA SEÇÃO
 # ============================================================
 
-TELEGRAM_TOKEN  = "8871244345:AAExq3oznFtxED7n5dOPLWumV0nWBLX5wvM"
-TELEGRAM_CHAT_ID = "7532070011"
+import os
+TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
 # Lista de ações para monitorar
 # Ações brasileiras (B3): sempre com .SA no final
@@ -27,12 +28,15 @@ ACOES = [
     "NVDA",
     "MSFT",
     "TSLA",
+    # EUA — sem sufixo
+    "AAPL",  # Apple
+    "GOOGL",  # Google
 ]
 
 # Critérios de análise (você pode ajustar estes valores)
 RSI_LIMITE           = 30   # Alerta se RSI estiver abaixo deste número
 VOLUME_MULTIPLICADOR = 1.5  # Alerta se volume for X vezes a média de 20 dias
-MIN_CRITERIOS        = 2    # Mínimo de critérios simultâneos para notificar
+MIN_CRITERIOS        = 1    # Mínimo de critérios simultâneos para notificar
 
 # ============================================================
 #  CÓDIGO DO ROBÔ — NÃO PRECISA ALTERAR ABAIXO
