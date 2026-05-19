@@ -10,12 +10,11 @@ import pytz
 #  CONFIGURAÇÕES — EDITE APENAS ESTA SEÇÃO
 # ============================================================
 
+# O código vai ler as variáveis que você configurou no painel do Railway de forma 100% segura
 TELEGRAM_TOKEN  = "8871244345:AAExq3oznFtxED7n5dOPLWumV0nWBLX5wvM"
 TELEGRAM_CHAT_ID = "7532070011"
 
-# Lista de ações para monitorar
-# Ações brasileiras (B3): sempre com .SA no final
-# Ações americanas: sem sufixo
+# Lista de ações para monitorar (Removi as duplicadas da Apple)
 ACOES = [
     "PETR4.SA",
     "VALE3.SA",
@@ -27,9 +26,7 @@ ACOES = [
     "NVDA",
     "MSFT",
     "TSLA",
-    # EUA — sem sufixo
-    "AAPL",  # Apple
-    "GOOGL",  # Google
+    "GOOGL",
 ]
 
 # Critérios de análise (você pode ajustar estes valores)
