@@ -10,9 +10,8 @@ import pytz
 #  CONFIGURAÇÕES — EDITE APENAS ESTA SEÇÃO
 # ============================================================
 
-import os
-TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+TELEGRAM_TOKEN  = "8871244345:AAExq3oznFtxED7n5dOPLWumV0nWBLX5wvM"
+TELEGRAM_CHAT_ID = "7532070011"
 
 # Lista de ações para monitorar
 # Ações brasileiras (B3): sempre com .SA no final
